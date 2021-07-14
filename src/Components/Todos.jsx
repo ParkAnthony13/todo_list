@@ -8,9 +8,8 @@ const Todos = props => {
         idx: "",
         line: ""
     });
-    const [boolList, setBoolList] = useState([])
-    const removerow = (idx) => {
 
+    const removerow = (idx) => {
         const copyTasks = tasks.filter( (task,i) => i != idx)
         setTasks(copyTasks)
     }
